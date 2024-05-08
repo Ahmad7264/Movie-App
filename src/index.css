@@ -1,30 +1,163 @@
+body {
+  background: lightseagreen;
+}
+
 .search-form {
-  width: 90vw;
+  width: 100vw;
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+  justify-content: center;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
-  
 }
 .form-input {
   width: 100%;
-  max-width: 600Px;
+  max-width: 600px;
+  border: none;
   background: white;
   padding: 1rem;
   font-size: 1rem;
   color: gray;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.5rem;
   margin-top: 1rem;
 }
 
-.error{
+.error {
   color: red;
   text-transform: capitalize;
   padding: 0.5rem;
 }
 .movies {
   width: 90vw;
-  display: grid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin: 0 auto;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
+}
+.movie-info {
+  width: 270px;
+  height: 150px;
+  gap: 0rem;
+
+  text-decoration: none;
+  justify-content: flex-start;
+  align-items: start;
+  display: grid;
+  font-size: 1rem;
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+}
+.movie {
+  overflow: hidden;
+}
+.title {
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 55px;
+  transition: all 0.3s ease;
+}
+.title:hover {
+  color: #e50914;
+}
+
+.data {
+  font-size: 20px;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-left: 70px;
+  transition: all 0.3s ease;
+}
+.data:hover {
+  color: #e50914;
+}
+
+.movie-buttons {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 130px;
+  height: 20px;
+  font: bold;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  color: #e50914;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e50914;
+}
+
+/* footer */
+
+.footer {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 2rem;
+ 
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.footer-links li:last-child {
+  margin-bottom: 0;
 }

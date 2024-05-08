@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-const API_ENDPOINT = "http://www.omdbapi.com/?i=tt3896198&apikey=c6681ace";
+import  { useEffect, useState } from "react";
+const API_ENDPOINT = "http://www.omdbapi.com/?&apikey=c6681ace";
 const useFetch = (urlParams) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState({ show: false, msg: "" });
@@ -7,7 +7,7 @@ const useFetch = (urlParams) => {
   useEffect(() => {
     fetchMovies(`${API_ENDPOINT}${urlParams}`);
   }, [urlParams]);
-  const fetchMovies = async (url) => {
+  const fetchMovies = async  (url) => {
     const response = await fetch(url);
     const data = await response.json();
 
